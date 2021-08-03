@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head> 
+
+
+
+<header class="header">
+
+    <div class="title">
+        <h1>Datadog  vs  Azure Monitor
+            <img class="logo" src="https://symbols.getvecta.com/stencil_78/21_datadog.de25ce0081.svg" alt="Datadog Logo" style="width:260px;height:60px;"/>
+        </h1>
+    
+    
+    </div>
+
+	<nav>
+        <a href="#" onClick="document.getElementById('top').scrollIntoView();">Azure</a>
+        <a onClick="document.getElementById('2nd').scrollIntoView();">Offerings</a>
+        <a onClick="document.getElementById('3rd').scrollIntoView();">Pricing</a>
+        <a onClick="document.getElementById('4th').scrollIntoView();">Differentiators</a>
+        <a onClick="document.getElementById('5th').scrollIntoView();">Datadog</a>
+        
+        <div id="indicator"></div>
+    </nav>
+</header>
+
+
+<body>
+    <div class="container" id="top">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AZURE2.mp4') }}" type="video/mp4">
+        </video>
+
+        <div class="overlay">
+            <div class="text">
+                <br>
+                <br>
+
+                <h1> What is </h1>
+                <h3>Azure Monitor? </h3>
+                <p>Azure Native cloud monitoring platform</p>
+                <br>
+                
+                <div id="explorebutton" onClick="document.getElementById('2nd').scrollIntoView();"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2" id="2nd">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AZURE8.mp4') }}" type="video/mp4">
+        </video>
+
+        <div class="wrapper">
+            <h1> Offerings </h1>
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://cdn.dribbble.com/users/1514097/screenshots/3451172/dashboard-icon.gif)">
+                                  <div class="inner">
+                                      <p>Metrics</p>
+                        <span>Monitoring</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <h2>Metrics Explorer</h2>
+                                    <p>
+                                        Analyze metrics from any Azure resource. 
+                                        Higest granularity is 1 minute with 30 day queryable data.
+                                    </p>
+                                    <h2>Live Metrics Stream</h2>
+                                    <p>
+                                        1 second latency for .NET applications.
+                                        No retention, discarded immediately. Requires SDK installation in applciation.
+                                    </p>
+                                    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/cc/00/b4/cc00b40751911eb1a4708af4ca90faea.gif)">
+                                  <div class="inner">
+                                      <p>Alerting</p>
+                        <span>Azure</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                        <br>
+                                        <h2>Alert Rules</h2>
+                                        <p>
+                                            Target resource that is watched at a set granularity. 
+                                            Evaluated metric is passed through a logic test then tied to a action group
+                                            or monitor condition.
+
+                                        </p>
+                            
+                                        </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/c6/1c/d2/c61cd23ff606ef7b7599ccf2c8dda159.gif)">
+                                  <div class="inner">
+                                      <p>Logs</p>
+                        <span>Azure</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                        <h2>Log Analytics</h2>
+                                        <p>
+                                            Requires Kusto Query Language. Log queries are done in the editor for
+                                            simple queries that return records to complex queries that perform
+                                            statistical analysis
+                                            
+                                        </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://bevologyinc.com/blog/wp-content/uploads/2019/01/Metrics-gif.gif)">
+                                <div class="inner">
+                                    <p>Workbooks</p>
+                      <span>Azure</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+
+                                    <h2>Interactive Reports</h2>
+                                    <p>
+                                        Combine data from various Azure services, log queries, metrics, parameters
+                                        into aesthetic interactive reports. 
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://i.pinimg.com/originals/31/29/46/3129460143a343c72f39adc53ad7fa62.gif)">
+                                <div class="inner">
+                                    <p>Insights</p>
+                      <span>Azure</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Application Insights</h2>
+                                    <p>
+                                        Application specific tools such as 
+                                        alerts, application map, profiler (flame graph),
+                                        dashboards, live metrics stream, snapshot debugger, continuous export.
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://developer.android.com/guide/practices/ui_guidelines/images/NB_Icon_Mask_Shapes_Ext_02.gif)">
+                                <div class="inner">
+                                    <p>Ping and Multi-step Web Tests</p>
+                      <span>Azure</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Ping Tests</h2>
+                                    <p>
+                                        Validate endpoint and web component response
+                                    </p>
+                                    <h2>Multi-step Web Tests</h2>
+                                    <p>
+                                        Requires VS code. Monitors sequences of URL requests and interactions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+           </div>
+        </div>
+
+    </div>
+
+    <div class="container3" id="3rd">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AZURE9.mp4') }}" type="video/mp4">
+        </video>
+
+        <h1 class="text-center">Pricing</h1>
+
+        <div class="pricing-box-container">
+            <div class="pricing-box text-center">
+                <h5>Free tier</h5>
+                <p class="price"><sup>$</sup>0<sub>/mo</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong> Log Ingestion - 50gb/month</li>
+                    <li><strong></strong> Log Storage - Free default retention (30 days)</li>
+                    <li><strong></strong> Metrics - GCP Metrics are free</li>
+                    <li><strong></strong> Trace Ingestion - First 2.5 million spans/month</li>
+                
+                
+                </ul>
+                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+            </div>
+        
+            <div class="pricing-box text-center">
+                <h5>Cloud Logging</h5>
+
+                <p class="price"><sup> Ingestion $</sup>0.50<sub>/gb</sub></p>
+                <p class="price"><sup> Storage $</sup>0.01<sub>/gb</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong>Default retention period of 30 days</li>
+                    <li><strong></strong>Extended retention pricing varies</li>
+                   
+                    <br>
+                </ul>
+                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+            
+            </div>
+        
+            <div class="pricing-box text-center">
+                <h5>Cloud Monitoring</h5>
+                <p class="price"><sup>Tier 1 $</sup>0.258<sub>/mb</sub></p>
+                <p class="price"><sup>Tier 2 $</sup>0.151<sub>/mb</sub></p>
+                <p class="price"><sup>Tier 3 $</sup>0.061<sub>/mb</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong>Tier 1 | 150-100,000mb</li>
+                    <li><strong></strong>Tier 2 | 100,000-250,000mb</li>
+                    <li><strong></strong>Tier 3 | >250,000mb </li>
+                    <li><strong></strong>Pricing decreases per mb as volume increases</li>
+                    
+                   
+                </ul>
+                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+            </div>
+
+            <div class="pricing-box text-center">
+                <h5>Cloud Monitoring API Calls</h5>
+                <p class="price"><sup> $</sup>0.01<sub>/1000 Read API calls</sub></p>
+
+                <ul class="features-list">
+                    <li><strong></strong>Only pay for read API calls</li>
+                    <li><strong></strong>Write API calls are free</li> 
+                    
+                </ul>
+                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+            </div>
+
+            <div class="pricing-box text-center">
+                <h5>Trace Ingestion</h5>
+                <p class="price"><sup>$</sup>0.20<sub>/million spans</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong>
+                        When latency data is sent to Trace, 
+                        it's packaged as a trace that is composed of spans, 
+                        and the spans are ingested by the Cloud Trace backend.
+                    </li>
+                    
+                    
+                </ul>
+                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container4" id="4th">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AZURE1.mp4') }}" type="video/mp4">
+        </video>
+        
+        <div class="topbox">
+            <h1>Why use Azure Monitor?</h1>
+        </div>
+
+        <div class="mainbox">
+            <h1>
+                <img class="targetlogo" style="vertical-align: middle;" src="https://feedingwestchester.org/wp-content/uploads/2018/03/TARGET.png" alt="target Logo" />
+               
+                "That’s elegant, simple, and adaptive. That doesn’t lock us in."
+                
+                <br>
+                Krishnan Srinivasan, Vice President of Cloud and Compute Infrastructure Platforms - Target
+            </h1>
+            
+            <br>
+            <h1>
+                <img class="kronalogo" style="vertical-align: middle;" src="https://cloud.google.com/images/customers/directory/krona_2x.png" alt="Krona Logo" />
+                "When we negotiated with Google, we saw a direct financial gain so considerable that it was quickly approved by the organization’s board."
+                <br>
+                Sidnei Marcelo Moreira de Matos, IT Manager - Krona.
+            </h1>
+
+            <br>
+            <h1>
+                <img class="adeologo" style="vertical-align: top;" src="https://cloud.google.com/images/customers/directory/adeo_2x.png" alt="adeo Logo"/>
+                "Using real-time monitoring enables us to follow best practices for deployment and keep our infrastructure functioning"
+                <br>
+                Marc Fundenberger, Senior SRE - ADEO Services
+            </h1>
+            
+        </div>
+    </div>
+
+    <div class="container5" id="5th">
+        <div class="text2">
+            
+            <h1> so... </h1>
+            <h3>Why</h3>
+            <h3>Datadog?</h3>
+            <p></p>
+            <br>
+            
+
+            <div class="ddogbox">
+                <form>
+                    <span class="text-center2">
+                        
+                        <h1>Agent Installation</h1>
+                        <h2> 
+                            GCP Cloud Monitor requires an installation on the VM similar to Datadog's agent. While GCP can monitor
+                            both hybrid and multi-cloud environments, Datadog has superior granularity.
+                        </h2>
+
+                        <h1>Superior Metrics and Integrations</h1>
+                        <h2>
+                            Datadog has over 50 metrics enabled by default, more metrics can be added with Datadog's application-specific integrations.
+                            Datadog offers more supported integrations than GCP monitor. 
+                
+                        </h2>
+
+                        <h1>No Synthetics or RUM</h1>
+                        <h2>
+                            GCP does not offer any synthetics or Real User Monitoring. They offer debugging and profiling for applications and services, however, they do not
+                            support any front-end monitoring solutions like Datadog. On top of this, Datadog has superior CI/CD monitoring, security, and social aspects on their platform.
+                        </h2>
+
+                        <h1>Superior DevOps Communciation</h1>
+                        <h2>
+                            Datadog offer public invite urls which allows anyone on any team to gain
+                            value from the platform. Datadogs social feed of alerts, incidents, 
+                            and graphs can be shared within the platform and even across Pagerduty, Slack, ServiceNow.
+
+
+                          </h2>
+
+                        <h1>Unified Tagging Structure</h1>
+                        <h2> 
+                            GCP requires a query builder (menu selector and writing queries) to filter through logs. Datadog uses a unified tagging and facet
+                            structure that seamlessly filters through logs and ties them to relevant instances or services. 
+                        </h2>
+
+                        <h1> Superior UI</h1>
+                        <h2> GCP Monitor's dashboards and UI are nothing special. </h2>
+
+
+                    </span>
+
+                </form>	
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
