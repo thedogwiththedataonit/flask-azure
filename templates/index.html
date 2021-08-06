@@ -26,7 +26,7 @@
 
 	<nav>
         <a href="#" onClick="document.getElementById('top').scrollIntoView();">Azure</a>
-        <a onClick="document.getElementById('2nd').scrollIntoView();">Offerings</a>
+        <a onClick="document.getElementById('1').scrollIntoView();">Offerings</a>
         <a onClick="document.getElementById('3rd').scrollIntoView();">Pricing</a>
         <a onClick="document.getElementById('4th').scrollIntoView();">Differentiators</a>
         <a onClick="document.getElementById('5th').scrollIntoView();">Datadog</a>
@@ -52,244 +52,289 @@
                 <p>Azure Native cloud monitoring platform</p>
                 <br>
                 
-                <div id="explorebutton" onClick="document.getElementById('2nd').scrollIntoView();"></div>
+                <div id="explorebutton" onClick="document.getElementById('1').scrollIntoView();"></div>
             </div>
         </div>
     </div>
-    
-    <div class="container2" id="2nd">
-        <video autoplay muted loop>
-            <source src="{{ url_for('static', filename='AZURE8.mp4') }}" type="video/mp4">
-        </video>
+ 
+    <div class= "container2" id="1">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div>  
+        
+        <img src="https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/media/metrics-charts/metrics-zoom-control.gif" />
+        <div class="text3">
+            <h3>Metrics</h3>
+            <br>
+            <br>
+            <h2>Metrics Explorer</h2>
+            <p>
+                Analyze metrics from any Azure resource. 
+                Higest granularity is 1 minute with 30 day queryable data.
+            </p>
+            <h2>Live Metrics Stream</h2>
+            <p>
+                1 second latency for .NET applications.
+                No retention, discarded immediately. Requires SDK installation in applciation.
+            </p>
+            <br>
+            <br>
+            <br>
 
-        <div class="wrapper">
-            <h1> Offerings </h1>
-            <div class="cols">
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://cdn.dribbble.com/users/1514097/screenshots/3451172/dashboard-icon.gif)">
-                                  <div class="inner">
-                                      <p>Metrics</p>
-                        <span>Monitoring</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                    <h2>Metrics Explorer</h2>
-                                    <p>
-                                        Analyze metrics from any Azure resource. 
-                                        Higest granularity is 1 minute with 30 day queryable data.
-                                    </p>
-                                    <h2>Live Metrics Stream</h2>
-                                    <p>
-                                        1 second latency for .NET applications.
-                                        No retention, discarded immediately. Requires SDK installation in applciation.
-                                    </p>
-                                    
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/cc/00/b4/cc00b40751911eb1a4708af4ca90faea.gif)">
-                                  <div class="inner">
-                                      <p>Alerting</p>
-                        <span>Azure</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                        <br>
-                                        <h2>Alert Rules</h2>
-                                        <p>
-                                            Target resource that is watched at a set granularity. 
-                                            Evaluated metric is passed through a logic test then tied to a action group
-                                            or monitor condition.
+        </div>
+    </div>
 
-                                        </p>
-                            
-                                        </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/c6/1c/d2/c61cd23ff606ef7b7599ccf2c8dda159.gif)">
-                                  <div class="inner">
-                                      <p>Logs</p>
-                        <span>Azure</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                        <h2>Log Analytics</h2>
-                                        <p>
-                                            Requires Kusto Query Language. Log queries are done in the editor for
-                                            simple queries that return records to complex queries that perform
-                                            statistical analysis
-                                            
-                                        </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div> 
+    <div class= "container3" id="2">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div>
 
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://bevologyinc.com/blog/wp-content/uploads/2019/01/Metrics-gif.gif)">
-                                <div class="inner">
-                                    <p>Workbooks</p>
-                      <span>Azure</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
+        <img src="https://miro.medium.com/max/1400/1*gI_nXw61vxLYXPHU7O9m-g.gif"/>
+        <div class="text3black">
+            <h3>Alerting</h3>
+            <br>
+            <br>
+            <h2>Alert Rules</h2>
+            <p>
+                Target resource that is watched at a set granularity. 
+                The evaluated metric is passed through a logic test then tied to a action group
+                or monitor condition.
+            </p>
+            <br>
+            <br>
+        </div>
 
-                                    <h2>Interactive Reports</h2>
-                                    <p>
-                                        Combine data from various Azure services, log queries, metrics, parameters
-                                        into aesthetic interactive reports. 
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://i.pinimg.com/originals/31/29/46/3129460143a343c72f39adc53ad7fa62.gif)">
-                                <div class="inner">
-                                    <p>Insights</p>
-                      <span>Azure</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <h2>Application Insights</h2>
-                                    <p>
-                                        Application specific tools such as 
-                                        alerts, application map, profiler (flame graph),
-                                        dashboards, live metrics stream, snapshot debugger, continuous export.
-                                        
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://developer.android.com/guide/practices/ui_guidelines/images/NB_Icon_Mask_Shapes_Ext_02.gif)">
-                                <div class="inner">
-                                    <p>Ping and Multi-step Web Tests</p>
-                      <span>Azure</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <h2>Ping Tests</h2>
-                                    <p>
-                                        Validate endpoint and web component response
-                                    </p>
-                                    <h2>Multi-step Web Tests</h2>
-                                    <p>
-                                        Requires VS code. Monitors sequences of URL requests and interactions.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-           </div>
+
+        </div> 
+    </div>
+
+    <div class= "container4" id="3">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div> 
+
+        <img src="https://platform.deloitte.com.au/hs-fs/hubfs/MEX%20-%20Blog%20images/MEX%20-%20Author%20-%20Paco%20de%20la%20Cruz/201712%20LogicApps%20Queries/21%20Save%20and%20Export%20Query.gif?width=751&height=396&name=21%20Save%20and%20Export%20Query.gif"/>
+        <div class="text3">
+            <h3>Log Analytics</h3>
+            <br>
+            <br>
+            <h2>Alert Rules</h2>
+            <p>
+                Requires Kusto Query Language. Log queries are done in the editor for
+                simple queries that return records to complex queries that perform
+                statistical analysis. Logs can be explorted to dashboards.
+            </p>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+    </div>
+
+    <div class= "container5" id="4">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div> 
+
+        <img src="https://raw.githubusercontent.com/Sheelnidhi-g/Azure-Automation-Update-Management-Workbooks/master/images/2019-06-26_11-42-17.gif"/>
+        <div class="text3">
+            <h3>Workbooks</h3>
+            <br>
+            <br>
+            <h2>Interactive Reports</h2>
+            <p>
+                Combine data from various Azure services, log queries, metrics, parameters
+                into aesthetic interactive reports. 
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class= "container6" id="5">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div>
+
+        <img src="https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/transaction-diagnostics/profilertraces.png"/>
+        <div class="text3black">
+            <h3>Insights</h3>
+            <br>
+            <br>
+            <h2>Application Insights</h2>
+            <p>
+                Application specific tools such as 
+                alerts, application map, profiler (flame graph),
+                dashboards, live metrics stream, snapshot debugger, continuous export.
+                <br>
+                <br>
+                Additional insights for VMs, storage services, etc.
+            </p>
+            <br>
+            <br>         
         </div>
 
     </div>
 
-    <div class="container3" id="3rd">
-        <video autoplay muted loop>
-            <source src="{{ url_for('static', filename='AZURE9.mp4') }}" type="video/mp4">
-        </video>
+    <div class="container7" id="6">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Workbooks</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Insights</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Tests</a>
+            </nav>
+        </div> 
+        
+        <img src="https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/monitor-web-app-availability/create-test.png"/>
+        <div class="text3black">
+            <h3>Ping and Multi-step Web Tests</h3>
+            <br>
+            <br>
+            <h2>Ping Tests</h2>
+            <p>
+                Validate endpoint and web component response times.
+            </p>
+            <h2>Multi-step Web Tests</h2>
+            <p>
+                Requires VS code. Monitors sequences of URL requests and interactions.
+            </p>
+     
+        </div>
 
-        <h1 class="text-center">Pricing</h1>
+    </div>
+ 
+    <div class="container8" id="3rd">
+
+        <div class="topbox-pricing">
+            <h1>Pricing</h1>
+        </div>
 
         <div class="pricing-box-container">
             <div class="pricing-box text-center">
-                <h5>Free tier</h5>
+                <h5>Free</h5>
                 <p class="price"><sup>$</sup>0<sub>/mo</sub></p>
                 <ul class="features-list">
-                    <li><strong></strong> Log Ingestion - 50gb/month</li>
-                    <li><strong></strong> Log Storage - Free default retention (30 days)</li>
-                    <li><strong></strong> Metrics - GCP Metrics are free</li>
-                    <li><strong></strong> Trace Ingestion - First 2.5 million spans/month</li>
+                    <li><strong></strong> Standard Activity Logs and Metrics</li>
+                    <li><strong></strong> 150MB custom metrics</li>
+                    <li><strong></strong> Log Data is retained for 31 days</li>
+                    <li><strong></strong> Application insights Data is retained for 90 days</li>
+                    <li><strong></strong> 10 Monitored Metric Alerts</li>
                 
                 
                 </ul>
-                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+                <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" class="btn-primary">Learn More</a>
             </div>
         
             <div class="pricing-box text-center">
-                <h5>Cloud Logging</h5>
+                <h5>Log Ingestion</h5>
 
-                <p class="price"><sup> Ingestion $</sup>0.50<sub>/gb</sub></p>
-                <p class="price"><sup> Storage $</sup>0.01<sub>/gb</sub></p>
+                <p class="price"><sup> Pay-as-you-go $</sup>2.76<sub>/gb</sub></p>
+                <p class="price"><sup> First Tier $</sup>2.20<sub>/gb</sub></p>
+                <p class="price"><sup> Last Tier $</sup>1.81<sub>/gb</sub></p>
+                <p class="price"><sup>Retention $</sup>0.12<sub>/GB/mo</sub></p>
                 <ul class="features-list">
-                    <li><strong></strong>Default retention period of 30 days</li>
-                    <li><strong></strong>Extended retention pricing varies</li>
+                    <li><strong></strong>Tiers are based on GB commitment</li>
+                    <li><strong></strong>Tiers range from 100GB/day to 5,000GB/day</li>
                    
                     <br>
                 </ul>
-                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+                <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" class="btn-primary">Learn More</a>
             
             </div>
         
             <div class="pricing-box text-center">
-                <h5>Cloud Monitoring</h5>
-                <p class="price"><sup>Tier 1 $</sup>0.258<sub>/mb</sub></p>
-                <p class="price"><sup>Tier 2 $</sup>0.151<sub>/mb</sub></p>
-                <p class="price"><sup>Tier 3 $</sup>0.061<sub>/mb</sub></p>
+                <h5>Web Tests</h5>
+                <p class="price"><sup>Ping Test $</sup>0<sub></sub></p>
+                <p class="price"><sup>Multi-step Test $</sup>10<sub></sub></p>
                 <ul class="features-list">
-                    <li><strong></strong>Tier 1 | 150-100,000mb</li>
-                    <li><strong></strong>Tier 2 | 100,000-250,000mb</li>
-                    <li><strong></strong>Tier 3 | >250,000mb </li>
-                    <li><strong></strong>Pricing decreases per mb as volume increases</li>
+                    <li><strong></strong>Ping Tests are free</li>
+                    <li><strong></strong>Multi-step Web test cost is per test per month</li>
+              
                     
                    
                 </ul>
-                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+                <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" class="btn-primary">Learn More</a>
             </div>
 
             <div class="pricing-box text-center">
-                <h5>Cloud Monitoring API Calls</h5>
-                <p class="price"><sup> $</sup>0.01<sub>/1000 Read API calls</sub></p>
+                <h5>Custom Metrics</h5>
+                <p class="price"><sup>Tier 1 $</sup>0.25<sub>/MB/mo</sub></p>
+                <p class="price"><sup>Tier 2 $</sup>0.15<sub>/MB/mo</sub></p>
+                <p class="price"><sup>Tier 3 $</sup>0.06<sub>/MB/mo</sub></p>
+                <p class="price"><sup>API calls $</sup>0.01<sub>/1000</sub></p>
+
 
                 <ul class="features-list">
-                    <li><strong></strong>Only pay for read API calls</li>
-                    <li><strong></strong>Write API calls are free</li> 
+                    <li><strong></strong>Tier 1 | 150-100,000MB</li>
+                    <li><strong></strong>Tier 2 | 100,000-250,000MB</li> 
+                    <li><strong></strong>Tier 3 | >250,000MB</li> 
                     
                 </ul>
-                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+                <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" class="btn-primary">Learn More</a>
             </div>
 
             <div class="pricing-box text-center">
-                <h5>Trace Ingestion</h5>
-                <p class="price"><sup>$</sup>0.20<sub>/million spans</sub></p>
+                <h5>Alerts</h5>
+                <p class="price"><sup>$</sup>0.10<sub>/metric/mo</sub></p>
+                <p class="price"><sup>Tier 1 $</sup>0.50<sub>/log/mo</sub></p>
+                <p class="price"><sup>Tier 2 $</sup>1.00<sub>/log/mo</sub></p>
+                <p class="price"><sup>Tier 3 $</sup>1.50<sub>/log/mo</sub></p>
+
                 <ul class="features-list">
-                    <li><strong></strong>
-                        When latency data is sent to Trace, 
-                        it's packaged as a trace that is composed of spans, 
-                        and the spans are ingested by the Cloud Trace backend.
-                    </li>
+                    <li><strong></strong>Tier 1 | 15-min granularity</li>
+                    <li><strong></strong>Tier 2 | 10-min granularity</li> 
+                    <li><strong></strong>Tier 3 | 5-min granularity</li> 
                     
                     
                 </ul>
-                <a href="https://cloud.google.com/stackdriver/pricing" class="btn-primary">Learn More</a>
+                <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" class="btn-primary">Learn More</a>
             </div>
         </div>
 
     </div>
 
-    <div class="container4" id="4th">
+    <div class="container9" id="4th">
         <video autoplay muted loop>
             <source src="{{ url_for('static', filename='AZURE1.mp4') }}" type="video/mp4">
         </video>
@@ -300,91 +345,95 @@
 
         <div class="mainbox">
             <h1>
-                <img class="targetlogo" style="vertical-align: middle;" src="https://feedingwestchester.org/wp-content/uploads/2018/03/TARGET.png" alt="target Logo" />
+                <img class="asoslogo" style="vertical-align: middle;" src="https://logo-logos.com/wp-content/uploads/2016/10/Asos_logo.png" alt="Asos Logo" />
                
-                "That’s elegant, simple, and adaptive. That doesn’t lock us in."
+                "With Azure Monitor, if there's a failure in one region, we transfer traffic to the next region."
                 
                 <br>
-                Krishnan Srinivasan, Vice President of Cloud and Compute Infrastructure Platforms - Target
+                Cat Smith, Platform lead - Asos
             </h1>
             
             <br>
             <h1>
-                <img class="kronalogo" style="vertical-align: middle;" src="https://cloud.google.com/images/customers/directory/krona_2x.png" alt="Krona Logo" />
-                "When we negotiated with Google, we saw a direct financial gain so considerable that it was quickly approved by the organization’s board."
+                <img class="bentleylogo" style="vertical-align: middle;" src="https://status.bentley.com/images/Bentley_Logo_RGB_No_B_No_tag.png" alt="Bentley Logo" />
+                "Many monitoring products tend to focus solely on virtual machine architectures. Azure Monitor goes much further, giving full stack visibility, natively integrated into Azure"
                 <br>
-                Sidnei Marcelo Moreira de Matos, IT Manager - Krona.
+                Saida Kontrime, Director - Bentley Systems
             </h1>
 
             <br>
             <h1>
-                <img class="adeologo" style="vertical-align: top;" src="https://cloud.google.com/images/customers/directory/adeo_2x.png" alt="adeo Logo"/>
-                "Using real-time monitoring enables us to follow best practices for deployment and keep our infrastructure functioning"
+                <img class="mpslogo" style="vertical-align: top;" src="https://www.mpsmonitor.com/wp-content/uploads/2017/05/logo_mpsmonitor-printer-monitoring-in-the-cloud-def.png" alt="mps Logo"/>
+                "It ook us less than a day to create an individual widget report [...] If we had needed to engage a developer to create something like this on the front-end framework, it would have taken two weeks. And the analytics wouldn't be
+                nearly as beautiful of a visualization."
                 <br>
-                Marc Fundenberger, Senior SRE - ADEO Services
+                Alberto Gastaldo, Chief Data Officer - MPS Monitor
             </h1>
             
         </div>
     </div>
 
-    <div class="container5" id="5th">
-        <div class="text2">
-            
-            <h1> so... </h1>
-            <h3>Why</h3>
-            <h3>Datadog?</h3>
-            <p></p>
-            <br>
-            
+    <div class="container10" id="5th">
+            <div class="text2">
+                <h1> so... </h1>
+                <h3>Why</h3>
+                <h3>Datadog?</h3>
+                <p></p>
+            </div>
 
             <div class="ddogbox">
                 <form>
                     <span class="text-center2">
                         
-                        <h1>Agent Installation</h1>
+                        <h1>Interwoven Monitoring Solution</h1>
                         <h2> 
-                            GCP Cloud Monitor requires an installation on the VM similar to Datadog's agent. While GCP can monitor
-                            both hybrid and multi-cloud environments, Datadog has superior granularity.
+                            Azure monitor is interwoven with the underlying application, vm, or service, making aggregate monitoring manual.
                         </h2>
 
-                        <h1>Superior Metrics and Integrations</h1>
+                        <h1>Integrations</h1>
                         <h2>
-                            Datadog has over 50 metrics enabled by default, more metrics can be added with Datadog's application-specific integrations.
-                            Datadog offers more supported integrations than GCP monitor. 
+                            Azure monitoring is only available for windows and linux systems and geared towards .NET applications.
                 
                         </h2>
 
-                        <h1>No Synthetics or RUM</h1>
+                        <h1>Synthetics and RUM</h1>
                         <h2>
-                            GCP does not offer any synthetics or Real User Monitoring. They offer debugging and profiling for applications and services, however, they do not
-                            support any front-end monitoring solutions like Datadog. On top of this, Datadog has superior CI/CD monitoring, security, and social aspects on their platform.
+                            Ping tests and multi-step web tests are simplistic and lack the user monitoring capabilities of Datadog.
                         </h2>
 
-                        <h1>Superior DevOps Communciation</h1>
-                        <h2>
-                            Datadog offer public invite urls which allows anyone on any team to gain
-                            value from the platform. Datadogs social feed of alerts, incidents, 
-                            and graphs can be shared within the platform and even across Pagerduty, Slack, ServiceNow.
+                
 
-
-                          </h2>
-
-                        <h1>Unified Tagging Structure</h1>
+                        <h1>Proxy Servers</h1>
                         <h2> 
-                            GCP requires a query builder (menu selector and writing queries) to filter through logs. Datadog uses a unified tagging and facet
-                            structure that seamlessly filters through logs and ties them to relevant instances or services. 
+                            No support for proxy server servies such as Nginx.
+                        </h2>
+
+                        <h1>Alert Fatigue</h1>
+                        <h2> 
+                            Azure handles alert fatigue by aggregating the metric values over reduced granularity. No ML alerting capabilities.
+                        </h2>
+
+                        <h1>Granularity</h1>
+                        <h2> 
+                            Azure's highest granularity is 1 minute.
+                        </h2>
+
+                        <h1>Log Queries</h1>
+                        <h2> 
+                            Azure monitor requires understanding of Kusto Query Language to parse logs.
                         </h2>
 
                         <h1> Superior UI</h1>
-                        <h2> GCP Monitor's dashboards and UI are nothing special. </h2>
-
-
+                        <h2> Azure Monitor's dashboards and UI are nothing special. </h2>
                     </span>
-
                 </form>	
-            </div>
-        </div>
+            </div>    
+        
+
     </div>
+
+
+
 </body>
 
 

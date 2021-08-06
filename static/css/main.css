@@ -10,10 +10,8 @@ head {
     background-color: rgba(0, 0, 0);
     width: 100%;
     height: auto;
-    z-index: 10;
+    z-index: 100;
     position: fixed;
-
-
 }
 
 body
@@ -40,30 +38,31 @@ body
 .title img.logo {
     float: right;
     clear: right;
-    padding-top:10px;
+    padding-top:0px;
     padding-right:65px;
     filter:invert()
 }
 
-.mainbox img.targetlogo{
+.mainbox img.asoslogo{
   width: auto;
-  height: 75px;
+  height: 40px;
+  vertical-align: top;
+  margin:0px 0px;
+  filter: invert()
+}
+
+.mainbox img.bentleylogo{
+  width: auto;
+  height: 40px;
   vertical-align: top;
   margin:0px 0px
 }
 
-.mainbox img.kronalogo{
+.mainbox img.mpslogo{
   width: auto;
   height: 50px;
   vertical-align: top;
-  margin:0px 0px
-}
-
-.mainbox img.adeologo{
-  width: auto;
-  height: 70px;
-  vertical-align: top;
-  margin:0px -0px
+  margin:-5px -0px
 }
 
 
@@ -92,10 +91,35 @@ body
 }
 
 .text2 {
-  text-align: left;
-  z-index: 10;
-  margin: 30px 20px;
-  padding: 170px 60px;
+    position:relative;
+    width: 800px;
+	left:30%;
+	top:35%;
+    transform: translate(-50%,-50%);
+	border-radius:3px;
+	padding:20px 30px;
+}
+
+
+.text3{
+	position:relative;
+    left:75%;
+    top:0%;
+    width:700px;
+	transform: translate(-50%,-50%);
+	border-radius:3px;
+	padding:20px 30px;
+}
+
+.text3black {
+    position:relative;
+    left:75%;
+    top:0%;
+    width:700px;
+	transform: translate(-50%,-50%);
+	border-radius:3px;
+	padding:30px 30px;
+    background-color:rgb(0, 0, 0,0.6);
 }
 
 .title h1 {
@@ -105,7 +129,7 @@ body
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 15px;
 	line-height: .75;
 	margin: 10px 0;
     text-align:center;
@@ -129,7 +153,7 @@ body
 }
 
 
-.container3 h1{
+.container7 h1{
 	text-transform: uppercase;
 	font-size: 50px;
 	line-height: .75;
@@ -180,7 +204,16 @@ body
   text-align: center;
   letter-spacing: 3px;
 }
-
+.text3 h2, .text3black h2
+{
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
 
 .text h3
 {
@@ -192,6 +225,20 @@ body
   letter-spacing: 5px;
   text-shadow: 5px 5px rgb(113, 24, 255);
 }
+
+.text3 h3, .text3black h3
+{
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px rgb(113, 24, 255);
+  text-align: center;
+}
+
+
 .text p
 {
   font-size: 2em;
@@ -200,6 +247,16 @@ body
   font-weight: 400;
   max-width: 700px;
 }
+
+.text3 p, .text3black p
+{
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
 .text a
 {
   display: inline-block;
@@ -254,19 +311,87 @@ body
   top:10px;
 }
 .container2 {
-    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.cbronline.com/wp-content/uploads/2017/03/microsoft-azure-2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
+.offerings {
+    position:sticky;
+    top:75px;
+    height: 50px;
+    background-color: rgb(100, 171, 238);
+    z-index: 10;
 }
+
+.container2 img, .container3 img, .container4 img, .container5 img, .container6 img, .container7 img {
+    border: 5px solid rgb(110, 110, 110);
+    height: 50%;
+    width: 43%;
+    position:relative;
+    top:25%;
+    left: 6%;
+    box-shadow: 20px 20px 20px rgb(100, 100, 100);
+}
+
+
 .container3 {
-    position: relative;
-    top:-15px;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp3734311.png");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
 .container4 {
-    position: relative;
-    top:-20px;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2670512.jpg"); 
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .container5 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2670510.jpg"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.container6 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/4834942.png"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.container7 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2670510.jpg"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.container8 {
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    background-image: url("https://www.cbronline.com/wp-content/uploads/2017/03/microsoft-azure-2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container9 {
+    position: relative;
+    top:px;
+}
+
+
+.container10 {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -277,7 +402,6 @@ body
   opacity: 1;
   z-index: 1;
   top: -60px;
-
 }
 
 
@@ -299,7 +423,7 @@ body
     object-fit:cover;
 }
 
-.container3 video {
+.container7 video {
     position: static;
     top: 0;
     left: 0;
@@ -308,7 +432,7 @@ body
     object-fit:cover;
 }
 
-.container4 video {
+.container8 video {
     position: static;
     top: 0;
     left: 0;
@@ -483,6 +607,167 @@ nav a:nth-child(5):hover ~ #indicator
 }
 
 
+/*NAV 2 for PRODUCT OVERVIEW*/
+
+.offerings nav
+{
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 600px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+.offerings nav a
+{
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 20px;
+    transition: 0.2s ease color;
+    letter-spacing: 2px;
+}
+
+.offerings nav a:before, .offerings nav a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+.offerings nav a:before
+{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+.offerings nav a:after
+{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+.offerings nav a:nth-child(1):before
+{
+    background-color: yellow;
+}
+.offerings nav a:nth-child(1):after
+{
+    background-color: red;
+}
+
+.offerings nav a:nth-child(2):before
+{
+    background-color: #00e2ff;
+}
+.offerings nav a:nth-child(2):after
+{
+    background-color: #89ff00;
+}
+
+.offerings nav a:nth-child(3):before
+{
+    background-color: purple;
+}
+.offerings nav a:nth-child(3):after
+{
+    background-color: palevioletred;
+}
+
+.offerings nav a:nth-child(4):before
+{
+    background-color: yellow;
+}
+.offerings nav a:nth-child(4):after
+{
+    background-color: red;
+}
+
+.offerings nav a:nth-child(5):before
+{
+    background-color: #00e2ff;
+}
+.offerings nav a:nth-child(5):after
+{
+    background-color: #89ff00;
+}
+.offerings nav a:nth-child(6):before 
+{ 
+    background-color: #a1339c;
+}
+.offerings nav a:nth-child(6):after 
+{ 
+    background-color: #e74c3c;
+}
+#indicator
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(201, 147, 183);
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+.offerings nav a:hover
+{
+    color: rgb(34, 34, 34);
+}
+
+.offerings nav a:hover:before, nav a:hover:after
+{
+    transform: scale(1);
+}
+
+.offerings nav a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+.offerings nav a:nth-child(2):hover ~ #indicator
+{
+    left: 22%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.offerings nav a:nth-child(3):hover ~ #indicator
+{
+    left: 42.5%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.offerings nav a:nth-child(4):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+    left: 60%;
+}
+
+.offerings nav a:nth-child(5):hover ~ #indicator
+{
+    left: 85%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.offerings nav a:nth-child(6):hover ~ #indicator
+{
+    left: 100%;
+    background: linear-gradient(130deg, #830f49, #8ea1bb);
+}
 
 /*flip cards*/
 
@@ -749,10 +1034,10 @@ nav a:nth-child(5):hover ~ #indicator
 	align-items:top; /*flex-start for same start but diff lengths down*/
 	justify-content: center;
 	flex-wrap: nowrap;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: 0 auto;
-    top:200px;
+    top:15%;
     z-index: 5;
 }
 
@@ -835,7 +1120,7 @@ nav a:nth-child(5):hover ~ #indicator
 
 /*text box*/
 .topbox{
-	background-color: rgba(0, 0, 0, 0.8);
+	
 	display: flex;
 	align-items: top;
 	justify-content: center;
@@ -848,17 +1133,28 @@ nav a:nth-child(5):hover ~ #indicator
 
 }
 
-.topbox h1 {
-	color: white;
-  text-shadow:2px 2px rgb(68, 0, 255);
+.topbox h1, .topbox-pricing h1 {
+    color: white;
+    text-shadow:4px 4px rgb(34, 0, 129);
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 35px;
+	font-size: 45px;
 	line-height: 1.25;
 	margin: 10px 0;
-  text-align:center;
-  letter-spacing: 3px;
+    text-align:center;
+    letter-spacing: 3px;
+}
+
+.topbox-pricing{
+	display: flex;
+	align-items: top;
+	justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    top:120px;
+    position: relative;
+    padding: 20px 20px ;
 }
 
 .mainbox {
@@ -886,18 +1182,19 @@ nav a:nth-child(5):hover ~ #indicator
 /*datadog box*/
 .text-center2 h1 {
 	color:#fff;	
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: 1.5px;
   line-height: 1.3;
   margin: 0 0 0 0;
   display: block;
   text-align: center;
   text-shadow:2px 2px  rgb(98, 0, 255);
+  text-transform: uppercase;
 }
 
 .text-center2 h2 {
 	color:#fff;	
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.3;
   margin: 0 0 10px 0 ;
   display: block;
@@ -906,12 +1203,12 @@ nav a:nth-child(5):hover ~ #indicator
 
 
 .ddogbox{
-	position:absolute;
-  width: 800px;
+	position:relative;
+    width: 800px;
 	left:70%;
-	top:55%;
+	top:18%;
 	transform: translate(-50%,-50%);
-  background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.80);
 	border-radius:3px;
 	padding:20px 30px;
 }
